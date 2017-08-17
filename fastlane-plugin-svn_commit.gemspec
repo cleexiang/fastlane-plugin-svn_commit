@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'lixiang@yatang.cn'
 
   spec.summary       = 'svn plugin with fastlane'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-svn_commit"
+  spec.homepage      = "https://github.com/cleexiang/fastlane-plugin-svn_commit"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
