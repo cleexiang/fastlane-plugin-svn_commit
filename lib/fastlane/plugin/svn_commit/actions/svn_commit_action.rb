@@ -28,23 +28,13 @@ module Fastlane
         # Optional:
         "commit to svn repos with fastlane"
       end
-
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :path,
-            description: "The file you want to commit",
-            s_string: false,
-            verify_block: proc do |value|
-              if value.kind_of?(String)
-                UI.user_error!("Couldn't find file at path '#{value}'") unless File.exist?(value)
-              else
-                value.each do |x|
-                  UI.user_error!("Couldn't find file at path '#{x}'") unless File.exist?(x)
-                end
-                end
-              end),
+                                       description: "The file you want to commit",
+                                       is_string: false),
           FastlaneCore::ConfigItem.new(key: :message,
-            description: "The commit message that should be used")
+                                       description: "The commit message that should be used")
         ]
       end
 
