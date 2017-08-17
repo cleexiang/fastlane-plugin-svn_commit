@@ -7,8 +7,8 @@ require 'fastlane/plugin/svn_commit/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-svn_commit'
   spec.version       = Fastlane::SvnCommit::VERSION
-  spec.author        = 'lixiang_yatang'
-  spec.email         = 'lixiang@yatang.cn'
+  spec.author        = 'cleexiang'
+  spec.email         = 'cleexiang@126.com'
 
   spec.summary       = 'svn plugin with fastlane'
   spec.homepage      = "https://github.com/cleexiang/fastlane-plugin-svn_commit"
